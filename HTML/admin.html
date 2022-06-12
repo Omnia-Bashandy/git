@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../CSS/noti.css" />
     <link rel="stylesheet" href="../CSS/addanimal.css" />
     <link rel="stylesheet" href="../CSS/mangeUsers.css" />
+    <link rel="stylesheet" href="../CSS/editprofile.css" />
+
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -81,7 +83,7 @@
                                 Welcome
                             </a>
                             <ul class="dropdown-menu">
-                                <li index="7"><a class="dropdown-item" href="editprofile.html">Edit profile</a></li>
+                                <li index="7" onclick="dispaly(this)"><a class="dropdown-item" >Edit profile</a></li>
                                 <li index=""><a class="dropdown-item" href="index.html"> Log Out</a></li>
                             </ul>
                         </div>
@@ -189,7 +191,27 @@
                       >
                     <label for="floatingInput">Cat_Id</label>
                   </div>
-                
+                <!-- <div class="form-floating mb-3">
+                    <input
+                      type="name"
+                      class="form-control"
+                      id="att2"
+                      >
+                    <label for="floatingInput">attribute 2</label>
+                  </div>
+              
+              
+            </div>
+              <div class="left">
+                <div class="form-floating mb-3">
+                    <input
+                      type="name"
+                      class="form-control"
+                      id="att3"
+
+                      >
+                    <label for="floatingInput">attribute 3</label>
+                  </div> -->
               
                 <div class="col-sm-10 butn">
                     <input value="ADD" class="btn btn-primary" id="addanimal"/>
@@ -256,7 +278,129 @@
         <section class="hide">4</section>
         <section class="hide">5</section>
         <section class="hide">6</section>
-        <section class="hide">7</section>
+        <section class="hide editProfile">
+          <!-- Start page -->
+          <div id="page">
+            <!-- Start header (1 div) -->
+            <header>
+              <h2 id="ps">profile setting </h2>
+        
+              <div id="front">
+          
+                <h3 id="yp">Your profile</h3>
+          
+                <hr id="edithr">
+          
+                <h4 id="ep">Edit profile</h4>
+                <form>
+                  <div id="con">
+                    <div id="cone">
+          
+                      <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                          <label for="validationServer01">First name</label>
+                          <input type="text" class="form-control is-valid" id="validationServer01" placeholder="New first name"
+                            value="Mark" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <label for="validationServer02">Last name</label>
+                          <input type="text" class="form-control is-valid" id="validationServer02" placeholder="New last name"
+                            value="Otto" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+          
+                        </div>
+          
+          
+                        <div class="col-md-4 mb-3">
+                          <label for="validationServer02">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            </div>
+                            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="New username"
+                              value="@Otto" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+          
+                          </div>
+                        </div>
+          
+                      </div>
+          
+                    </div>
+          
+          
+          
+          
+                    <div id="ctoww">
+          
+                
+                      <div class="formpass" action="#" method="post">
+              
+                        <p>
+                          <label for="password">Password</label>
+                          <input id="password" name="password" type="password">
+                          <span>Enter a password longer than 8 characters</span>
+                        </p>
+                        <p>
+                          <label for="confirm_password">Confirm Password</label>
+                          <input id="confirm_password" name="confirm_password" type="password">
+                          <span>Please confirm your password</span>
+                        </p>
+                     
+                      </div>
+          
+                      <fieldset class="form-group">
+                        <div class="row">
+                          <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                              <label class="form-check-label" for="gridRadios1">
+                                Male
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Famale
+                              </label>
+                            </div>
+          
+          
+                            <div class="mb-3 row">
+                              <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                              <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                  value="email@example.com">
+                                <small id="emailHelp" class="form-text text-muted">This is our corporate email.</small>
+                              </div>
+                            </div>
+          
+          
+                            <br>
+          
+                            <div class="form-group row">
+                              <div class="col-sm-10">
+                                <button type="button" id="reg" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+          
+                      </fieldset>
+                    </div>
+                  </div>
+          
+          
+          
+          
+                </form>
+              </div></section>
         <section class="hide mange">
            <div class="content">
           <div class="row height d-flex justify-content-center align-items-center">
@@ -267,7 +411,22 @@
               </div>
           </div>
           <ul class="users" id="myUL">
-              
+              <!-- <li>
+                  <div class="user1">
+                      <div class="detils">
+                          <button onClick="ShowAndHide()" class="bb"><img src="../admin_icon.jpg"></button>
+                          <ul id="SectionName">
+                         <li> email:omnia@bashandy.com</li>
+                          <li>Fname:juh</li>
+                         <li> Lname:rr</li>
+                         <li> Uname:ijuk</li>
+                      </ul>
+                          <button class="btn btn-primary">Delete</button>
+
+                      </div>
+                  </div>
+              </li>
+              <li>p</li> -->
   
           </ul>
                 </div>
@@ -294,6 +453,7 @@
 <script src="../JS/adduser.js"></script>
 <script src="../JS/mangeUsers.js"></script>
 <script src="../JS/addanimal.js"></script>
+<script src="../JS/editprofile.js"></script>
 
 
 
