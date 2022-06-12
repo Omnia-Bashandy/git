@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../bg.jpg);
+    /* background-repeat: no-repeat;*/
+    background-size: cover; 
+}
+/*form styles*/
+/*stert head style*/
+.head{
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.logoDiv{
+    /* border: 1px solid black; */
+    width: 540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoDiv > h4{
+    color: white;
+    
+}
+.dd{
+    display: none !important;
+}
+.dd , .buttons{
+    /* border: 1px solid green ; */
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+}
+.head > div > a{
+    text-decoration: none;
+    color: white;
+}
+.buttons button{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.buttons:hover{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: gray !important;
+    border-bottom: 3px solid gray;
+
+}
+.logo{
+    border: 1px solid;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: 15px;
+
+}
+/*end head style*/
+
+.formar{
+    /* // layout */
+position: relative;
+max-width: 72em;
+height: 28em;
+top: 35px;
+left: 50px;
+/* // looks */
+background-color: #fff;
+padding: 1.125em 1.5em;
+font-size: 1.25em;
+border-radius: 1rem;
+box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+
+}
+.formar::before {
+/* // layout */
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+bottom: 100%;
+left: 57.5em; 
+/* // offset should move with padding of parent */
+border: .75rem solid transparent;
+border-top: none;
+
+/* // looks */
+border-bottom-color: #fff;
+filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+.jo{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+form{
+    margin-top: 50px;
+    /* margin-left: 490px; */
+    /* border: 1px solid black; */
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: 15% 8% 20% 20%;
+    /* grid-template-columns: 30% 20% 20% 30% ; */
+    gap: 3%;
+    width: 700px;
+    height: 400px;
+    background-color:white;
+}
+form > .log{
+    font-size: 40px;
+    font-weight: 900;
+    /* margin-top: 30px; */
+    color: #292057;
+    margin-left: 30px;
+}
+ .loginerror{
+    margin-left: 60px;
+    color: red;
+}
+.error{
+    color: red; 
+}
+.jo > .photo{
+    /* border: 1px solid; */
+    height: 475px;
+}
+.fild{
+    display: grid;
+    grid-template-columns: 8% 60% 25%;
+    gap: 3%;
+}
+.PassFild{
+    display: grid;
+    grid-template-columns: 8% 60% 5% 25%;
+    gap: 3%;
+}
+
+.fas {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-left: 10px;
+}
+.col-12 .btn{
+    width: 300px;
+    margin-left: 60px;
+    margin-right: 10px;
+    height: 50px;
+    font-size: 20px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#70306d+0,c121c3+100 */
+background: rgb(149, 105, 147); /* Old browsers */
+background: -moz-linear-gradient(left,  rgb(131, 81, 128) 0%, rgba(193,33,195,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(112,48,109,1) 0%,rgba(193,33,195,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(112,48,109,1) 0%,rgba(193,33,195,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70306d', endColorstr='#c121c3',GradientType=1 ); /* IE6-9 */
+
+    color:white;
+}
+.col-12 .btn:hover{
+/* color: blueviolet; */
+    background-color: white;
+    /* color:white; */
+}
+/*end form style*/
+/*about style*/
+.content{
+    /* // layout */
+position: relative;
+max-width: 72em;
+height: 28em;
+top: 35px;
+left: 50px;
+
+/* // looks */
+background-color: #fff;
+padding: 1.125em 1.5em;
+font-size: 1.25em;
+border-radius: 1rem;
+box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+.content::before {
+/* // layout */
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+bottom: 100%;
+left: 66.4em; 
+/* // offset should move with padding of parent */
+border: .75rem solid transparent;
+border-top: none;
+
+/* // looks */
+border-bottom-color: #fff;
+filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+.cont{
+    display: grid;
+    grid-template-rows: 28% 15% 15% 15 34%;
+    font-size: 20px;
+}
+.cont > span{
+    font-weight: bold;
+}
+.about{
+    margin: auto;
+    font-size: 30px;
+    color: #292057;;
+}
+/*end about style*/
+.hide
+{
+    display: none
+}
+.show
+{
+    display: grid;
+}
+
+@media (min-width:700px) and (max-width:999px){
+    form {
+        /* border: 1px solid red; */
+        margin-left: 300px;
+    }
+}
+@media (min-width:500px) and (max-width:699px){
+    form {
+        /* border: 1px solid blue; */
+        margin-left: 160px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .dd{
+        display: flex !important;
+        width: 100px;
+    }
+    .dd .btn{
+        margin-left: 230px;
+        font-size: 20px;
+        background: none;
+        border-color: white;
+        color: white;
+    }
+
+    .head > div{
+        display: none;
+    }
+}
+@media (max-width:499px){
+    form {
+        /* border: 1px solid green; */
+        margin-left: 100px;
+        width: 290px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .dd{
+        display: flex !important;
+    }
+    .dd .btn{
+        margin-left: 130px;
+        font-size: 20px;
+        background: none;
+        border-color: white;
+        color: white;
+    }
+    .head > div{
+        display: none;
+    }
+    .fild{
+        /* display: grid;
+        grid-template-columns: 10% 90%; */
+        margin-right: 0px;
+    }
+    .fas{
+        font-size: 15px;
+        margin-left: 7px;
+    }
+    .col-12 .btn{
+        width: 215px;
+        margin-left: 30px;
+    }
+    .fild{
+        display: grid;
+        grid-template-columns: 10% 80%;
+        margin-right: 15px;
+    }
+}
+

@@ -1,0 +1,146 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+body{
+    font-weight: 400;
+    height:auto;
+}
+
+
+.add .back{
+    width: 100%;
+    height: 450px; 
+    border: 1px solid #F9F9FB;
+    border-radius: 10px;
+}
+
+.add .front{
+    width: 92%;   
+    height: 470px;
+    background-color:white;
+    border: 1px solid white;
+    margin:3% 4%;
+    border-radius: 10px;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+ 
+.add .addB{
+     /* border: 1px solid;  */
+     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    height: 47px;
+    /* width:1900px; */
+     /* align-items: self-end    */
+}
+.add .history{
+    /* border: 1px solid;  */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;  
+   width: 420px;
+}
+
+.add .history > .btn{
+    background-color: #A34B9A;
+    border:#A34B9A;
+    width: 100px;
+    height: 40px;
+    text-align: center;   
+    width: 150px;
+}
+.add .addBa{
+    /* border: 1px solid red;    */
+ color: white;
+ text-decoration: none;
+}
+.add h3 {
+    margin-left: 40px;
+    color: #A34B9A;
+    margin-top: 12px;
+}
+
+.add h2 {
+    margin-top: 11px;
+    margin-bottom: -47px;
+    margin-left: 52px;
+
+}
+
+.add h4{
+    margin-left: 44px;
+} 
+.add .left{
+    margin-top: 33px;
+}
+#cone > .right, #cone > .left{
+    /* border: 1px solid red;    */
+    width: 550px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.add  #cone{
+       /* border: 1px solid black;   F */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1300px;
+    margin: auto;
+}
+.add  #cone .form-control{
+    width:500px;
+}
+
+.add .dd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+}
+.add .pass{
+    display: flex;
+    flex-direction: row;
+}
+.add .pass i{
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+.add .butn{
+    display: flex;
+    justify-content: flex-end;
+}
+.add .butn > .btn{
+    background-color: #A34B9A;
+    border:#A34B9A;
+    color: white;
+    width: 193px;
+    height: 40px;
+    margin-right: -112px;
+    margin-bottom: -13px;
+
+}
+.add #error{
+    color: red;    
+}
+.add .butn > .btn:hover{
+    background-color: #A34B9A;
+}
+.add .history > .btn:hover{
+    background-color: #A34B9A;
+
+}
+
+.add .addB > button:hover{
+    background-color: #A34B9A;
+}
+.add .addBa:hover{
+    color: white;
+    
+}

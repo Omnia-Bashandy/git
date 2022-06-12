@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.page{
+    width:98%;
+    margin: auto;
+}
+nav {
+    /* background: #121212; */
+    color: #121212;
+    /* color: rgb(255, 244, 244); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0.2rem 0; */
+    padding: 0 1rem;
+    /* height: 11vh; */
+    position: relative;
+    /* border:1px solid; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    border-radius: 50%;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 1rem;
+    /* border:1px solid black;  */
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: #121212;
+}
+
+nav ul li .fs {
+    margin-bottom: 5px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+nav ul li .link::after {
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    width: 0%;
+    left: 0;
+    top: 1.8rem;
+    background: #A276C6;
+    transition: 0.3s linear;
+}
+
+nav ul li .link:hover::after {
+    width: 100%;
+}
+
+nav ul li .link.clicked::after {
+    width: 100%;
+}
+
+nav ul li .link:visited {
+    text-decoration: underline;
+}
+
+nav ul li:hover {
+    color: #A276C6;
+}
+
+nav ul li a:hover {
+    color: #A276C6;
+}
+.dropdown-item{
+    font-size: 17px;
+}
+.activey {
+    color: #A276C6;
+    text-decoration: underline;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 1.8rem;
+}
+.hide{
+    display: none;
+    
+}
+.show{
+    display: block;
+}
+/* nav ul.active {
+    left: 0;
+} */
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0 3rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .toggle-button {
+        display: block;
+        z-index: 1;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 1vh;
+        background: #eeee;
+        opacity:0.5; 
+        width: 100%;
+        height: 100%;
+        left: -1000px;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 0;
+
+    }
+
+    nav ul li {
+        padding: 2rem 0;
+        font-size: 1.2rem;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+} 
+
