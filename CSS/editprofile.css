@@ -1,0 +1,172 @@
+
+.editProfile #back{
+
+    
+  width: 100%;
+  height: 577px;
+  background-color:#F9F9FB;
+ border: 1px solid #F9F9FB;
+ border-radius: 10px;
+}
+
+
+
+
+.editProfile #front{
+  width: 92%;
+  height: 550px;
+  background-color:white;
+ border: 1px solid white;
+ margin: 65px 56px 0px 56px;
+ border-radius: 10px;
+ box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+
+
+.editProfile #con{
+  margin-left: 91px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.editProfile #cone{
+  width: 68%;
+   
+
+}
+
+.editProfile #ctoww{
+  margin-right: 197px;
+  margin-left: -132px;
+  margin-top: -148px;
+
+   
+}
+
+ 
+.editProfile #ps {
+  margin-top: 11px;
+  margin-bottom: -47px;
+  margin-left: 52px;
+
+}
+.editProfile #yp {
+  margin-left: 40px;
+  color: #A34B9A;
+  margin-top: 12px;
+}
+
+
+
+.editProfile #ep{
+  margin-left: 44px;
+}
+
+.editProfile #edithr{
+width: 100%;
+}
+
+.editProfile .form-control-plaintext {
+  width: 60%;
+}
+
+.editProfile #reg{
+    color: #fff;
+    background-color:#A34B9A;
+    border-color: #A34B9A;
+    
+}
+
+.editProfile #save:hover{
+  color: #fff;
+  background: rgb(112,48,109); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(112,48,109,1) 0%, rgba(145,49,143,1) 53%, rgba(193,33,195,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(112,48,109,1) 0%,rgba(145,49,143,1) 53%,rgba(193,33,195,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(112,48,109,1) 0%,rgba(145,49,143,1) 53%,rgba(193,33,195,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70306d', endColorstr='#c121c3',GradientType=0 ); /* IE6-9 */ 
+  
+}
+.editProfile .formpass {
+  font-family: sans-serif;
+  font-size: 10px;
+  
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 100px auto 0;
+ 
+  border-radius: 5px;
+}
+.editProfile .formpass p {
+  margin: 0 0 3em 0;
+  position: relative;
+}
+.editProfile .formpass label {
+  display: block;
+  font-size: 1.6em;
+  margin: 0 0 .5em;
+  color: #333;
+}
+.editProfile .formpass input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none
+}
+.editProfile .formpass input[type="text"],
+.editProfile .formpass input[type="password"] {
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  font-size: 1.3em;
+  padding: .8em .5em;
+  border-radius: 5px;
+}
+.editProfile .formpass input[type="text"]:focus,
+.editProfile .formpass input[type="password"]:focus {
+  background: #fff
+}
+.editProfile .formpass span {
+  border-radius: 5px;
+  display: block;
+  font-size: 1.3em;
+  text-align: center;
+  position: absolute;
+  background: #A34B9A;
+  left: 105%;
+  top: 25px;
+  width: 160px;
+  padding: 7px 10px;
+  color: #fff;
+}
+.editProfile .formpass span:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #A34B9A;
+  border-width: 8px;
+  margin-top: -8px;
+}
+.editProfile .formpass input[type="submit"] {
+  background: #A34B9A;
+  box-shadow: 0 3px 0 0 #A34B9A;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+  line-height: 1.6em;
+  margin: 2em 0 0;
+  outline: none;
+  padding: .8em 0;
+  text-shadow: 0 1px #68B25B;
+
+}
